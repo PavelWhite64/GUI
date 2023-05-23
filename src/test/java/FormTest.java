@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class FormTest {
-    private static WebDriver driver;
+    private WebDriver driver;
 
     @BeforeAll
     static void setupClass() {
@@ -24,7 +24,7 @@ public class FormTest {
 
     @AfterEach
     void teardown() {
-       driver.quit();
+        driver.quit();
     }
 
     @Test
