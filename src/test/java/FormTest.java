@@ -25,7 +25,7 @@ public class FormTest {
 
     @AfterEach
     void teardown() {
-//        driver.quit();
+       driver.quit();
     }
 
     @Test
