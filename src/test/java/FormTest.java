@@ -62,6 +62,7 @@ public class FormTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void errorNotNameTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("");
@@ -87,6 +88,7 @@ public class FormTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void errorNotPhoneTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Павел Цыганков");
